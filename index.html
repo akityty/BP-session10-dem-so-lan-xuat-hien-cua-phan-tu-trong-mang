@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script>
+    function makeArr(amountNumberInArr) {
+        var arr = [];
+        for(let  i = 0; i<amountNumberInArr; i++){
+            arr[i] = Math.floor((Math.random() * 51));
+        }
+        return arr;
+    }
+    function countValue(arr,data) {
+        var count = 0;
+        for(let i = 0; i < arr.length; i++){
+            if(arr[i] === data){
+                count +=1;
+            }
+        }
+        return count;
+    }
+    let arr = makeArr(100);
+    let count =  countValue(arr,37);
+    console.log(arr);
+    console.log(" so lan xuat hien cua so 37 trong mang la "+count);
+</script>
+</body>
+</html>
